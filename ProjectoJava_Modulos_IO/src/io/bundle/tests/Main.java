@@ -1,8 +1,8 @@
 package io.bundle.tests;
 
+import java.util.Locale;
 import io.bundle.properties.Bundle;
 
-import java.util.Locale;
 
 public class Main {
 

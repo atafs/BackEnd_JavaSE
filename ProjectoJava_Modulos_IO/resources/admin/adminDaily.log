@@ -13,3 +13,18 @@ java.lang.NumberFormatException: For input string: "5x"
 	at io.logger.tests.Main.main(Main.java:27)
 [INFO] [06-10-2015 17:48:23] io.logger.properties.LogMessage - 
 APP FINISHED WITH SUCCESS...
+[INFO] [06-10-2015 18:08:18] io.logger.properties.LogMessage - APP STARTED...
+
+[TRACE] [06-10-2015 18:08:18] io.logger.properties.LogMessage - Trace Message!
+[DEBUG] [06-10-2015 18:08:18] io.logger.properties.LogMessage - Debug Message!
+[INFO] [06-10-2015 18:08:18] io.logger.properties.LogMessage - Info Message!
+[WARN] [06-10-2015 18:08:18] io.logger.properties.LogMessage - Warn Message!
+[ERROR] [06-10-2015 18:08:18] io.logger.properties.LogMessage - Error Message!
+[ERROR] [06-10-2015 18:08:18] io.logger.properties.LogMessage - ERROR: Cannot format 5x to a number!!
+java.lang.NumberFormatException: For input string: "5x"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at io.logger.tests.Main.main(Main.java:27)
+[INFO] [06-10-2015 18:08:18] io.logger.properties.LogMessage - 
+APP FINISHED WITH SUCCESS...
