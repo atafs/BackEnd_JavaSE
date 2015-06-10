@@ -1,0 +1,4 @@
+casa1;morada;descricao 
+casa2;lote;descricao 
+casa3;terreno;descricao 
+casa4;trilho;descricao 

@@ -10,9 +10,10 @@ public class Main {
 		LogMessage logger = new LogMessage();
 		
 		/* START */
-		System.out.println("---------------------PRINT---------------------");
-		logger.getLog().info("\nAPP STARTED...\n");
-		System.out.println("Hello Rebis!!!");		
+		System.err.println("---------------------LOGGER---------------------");
+		System.err.println("Hello MORPHIS!!!");	
+		logger.getLog().info("APP STARTED...\n");
+			
 
 		logger.getLog().trace("Trace Message!");
 		logger.getLog().debug("Debug Message!");
@@ -25,14 +26,20 @@ public class Main {
 		try {
 			Integer.parseInt(number);
 		} catch (Exception e) {
+			paragraph();
+			System.err.println("---------------------LOGGER - EXCEPTION---------------------");
 			logger.getLog().error("ERROR: Cannot format " + number + " to a number!!", e);
 		}
 		
 		/* FINISHED */
-		logger.getLog().info("\nAPP FINISHED...\n");
-		System.out.println("---------------------PRINT---------------------");
-
-
+		paragraph();
+		System.err.println("---------------------END LOGGER---------------------");
+		logger.getLog().info("\nAPP FINISHED WITH SUCCESS...");
+	}
+	
+	//PARAGRAPH
+	public static void paragraph() {
+		System.out.println();
 	}
 
 }

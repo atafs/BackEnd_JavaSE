@@ -1,6 +1,6 @@
 package io.bundle.tests;
 
-import io.bundle.properties.BundleResources;
+import io.bundle.properties.Bundle;
 
 import java.util.Locale;
 
@@ -10,7 +10,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		//INITIALIZE
-		BundleResources bundle = new BundleResources();
+		Bundle bundle = new Bundle();
 		Locale[] supportedLocales = { Locale.ITALIAN, Locale.GERMAN, Locale.ENGLISH };
 
 		//CONSOLE

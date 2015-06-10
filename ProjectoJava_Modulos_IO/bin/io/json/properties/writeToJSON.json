@@ -1,5 +1,7 @@
 [
 	{"nome": "Maria", "pontuacao": 30},
 	{"nome": "Joao", "pontuacao": 40},
+	{"nome": "Americo", "pontuacao": 20},
+	{"nome": "Tomas", "pontuacao": 10},
 	{"nome": "Ana", "pontuacao": 60}
 ]

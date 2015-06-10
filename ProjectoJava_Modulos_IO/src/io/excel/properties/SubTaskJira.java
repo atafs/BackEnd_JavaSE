@@ -30,7 +30,7 @@ public class SubTaskJira {
 	@Override
 	public String toString() {
 		String toReturn = "";
-		toReturn += "id ->" + id + "\n";
+		toReturn += "id -> " + id + "\n";
 		toReturn += "   - title -> " + title + "\n";
 		toReturn += "   - description -> " + description;
 		return toReturn;

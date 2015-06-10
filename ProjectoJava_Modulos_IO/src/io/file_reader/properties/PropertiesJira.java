@@ -1,15 +1,20 @@
 package io.file_reader.properties;
 
 
-import io.Reader;
+import java.util.Locale;
+
+import io.NReader;
+import io.bundle.properties.BundlePath;
 
 //DAO CLASS
 public class PropertiesJira {
 	
 	//ATTRIBUTES: INPUT DATA ----------------------------------------------------------------
-	private static final String path = "src/main/java/com/sebasi/jira/io/file_reader/properties/config.properties";
+	private String path = "";
+	//private String path = "properties/config.properties";
+	//private static final String path = "src/main/java/com/sebasi/jira/io/file_reader/properties/config.properties";
 	//-----------------------------------------------------------------------------------------------------
-	private Reader reader;
+	private NReader reader;
 	
 	//PROPERTIES
 	private String JIRA_URL = "";
@@ -29,7 +34,15 @@ public class PropertiesJira {
 
 	//CONTRUCTOR
 	public PropertiesJira() {
-		reader = new Reader();
+		//INITIALIZE
+		
+		//SYSTEM PATH
+		BundlePath bundle = new BundlePath();
+		Locale supportedLocales = Locale.ENGLISH;
+		path = bundle.displayValue(supportedLocales, "pathToConfigProperties");
+		
+		//SYSTEM PROPERTIES
+		reader = new NReader();
 		JIRA_URL = reader.readFileReader(path, "JIRA_URL");
 		JIRA_ADMIN_USERNAME = reader.readFileReader(path, "JIRA_ADMIN_USERNAME");
 		JIRA_ADMIN_PASSWORD = reader.readFileReader(path, "JIRA_ADMIN_PASSWORD");
@@ -51,11 +64,11 @@ public class PropertiesJira {
 		return JIRA_URL;
 	}
 
-	public static String getPath() {
+	public String getPath() {
 		return path;
 	}
 
-	public Reader getReader() {
+	public NReader getReader() {
 		return reader;
 	}
 

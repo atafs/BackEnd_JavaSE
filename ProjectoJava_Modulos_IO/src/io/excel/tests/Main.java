@@ -2,9 +2,11 @@ package io.excel.tests;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Locale;
 
-import io.Reader;
-import io.Writer;
+import io.NReader;
+import io.NWriter;
+import io.bundle.properties.BundlePath;
 import io.excel.properties.SubTaskJira;
 import jxl.write.Label;
 import jxl.write.Number;
@@ -16,20 +18,30 @@ public class Main {
 	//private static final String pathWriteTo = "C:\\ellucian_jira\\JiraCreate\\Workspace\\jira-rest-java-client-parent\\src\\main\\java\\com\\sebasi\\jira\\io\\excel\\properties\\writeToFile.xls";
 	//private static final String pathReadFrom = "C:\\ellucian_jira\\JiraCreate\\Workspace\\jira-rest-java-client-parent\\src\\main\\java\\com\\sebasi\\jira\\io\\excel\\properties\\readFromFile.xls";
 	
-	private static final String pathWriteTo = "src/io/excel/properties/writeToFile.xls";
-	private static final String pathReadFrom = "src/io/excel/properties/readFromFile.xls";
+	//private static final String pathWriteTo = "src/main/java/com/sebasi/jira/io/excel/properties/writeToFile.xls";
+	//private static final String pathReadFrom = "src/main/java/com/sebasi/jira/io/excel/properties/readFromFile.xls";
 	//-----------------------------------------------------------------------------------------------------
 	
 	public static void main(String[] args) throws IOException {
 		
+		//INITIALIZE PATH
+		BundlePath bundle = new BundlePath();
+		Locale supportedLocales = Locale.ENGLISH;
+		String pathWriteToExcel = bundle.displayValue(supportedLocales, "pathWriteToExcel");
+		String pathReadFromExcel = bundle.displayValue(supportedLocales, "pathReadFromExcel");
+
 		//INSTANTIATE
-		Writer writer = new Writer();
+		NWriter writer = new NWriter();
 		
 		//LIST
 		ArrayList<Object> list = new ArrayList<Object>();
-		list.add(new Label(0, 0, "SUCESS: a new record"));
-		list.add(new Number(0, 1, 40));		
 		
+		//INSERT DATA IN EXCEL
+		for (int i = 0; i < 5; i++) {
+			list.add(new Label(0, i, "SUCESS WITH MORPHIS" + i + ": a new record"));
+			list.add(new Number(1, i, i));	
+		}
+			
 		//CONSOLE
 		System.out.println("--------------PRINT CELLS: WRITER------------------");
 		for (Object cell : list) {
@@ -37,11 +49,11 @@ public class Main {
 		}
 		
 		//WRITE
-		writer.writeToExcel(pathWriteTo, list);
+		writer.writeToExcel(pathWriteToExcel, list);
 
 		
 		System.out.println("\n--------------PRINT CELLS: 1-READER------------------");
-		Reader reader = new Reader(pathReadFrom);
+		NReader reader = new NReader(pathReadFromExcel);
 		reader.readExcel();
 		
 		System.out.println("\n--------------PRINT CELLS: 2-READER------------------");
