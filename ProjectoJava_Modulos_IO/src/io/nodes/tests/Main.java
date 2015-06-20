@@ -7,8 +7,8 @@ import java.util.Locale;
 import java.util.Map.Entry;
 
 import io.NWriter;
+import io.PropertiesJira;
 import io.bundle.properties.BundlePath;
-import io.file_reader.properties.PropertiesJira;
 import io.json.properties.SubTaskJSON;
 import io.nodes.properties.NodeJira;
 

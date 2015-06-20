@@ -1,9 +1,8 @@
-package io.file_reader.properties;
+package io;
 
 
 import java.util.Locale;
 
-import io.NReader;
 import io.bundle.properties.BundlePath;
 
 //DAO CLASS

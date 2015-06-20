@@ -1,7 +1,7 @@
 package io.file_reader.tests;
 
 import io.NReader;
-import io.file_reader.properties.PropertiesJira;
+import io.PropertiesJira;
 
 public class Main {
 	
