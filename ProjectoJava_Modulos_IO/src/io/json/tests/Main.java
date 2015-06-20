@@ -21,7 +21,7 @@ public class Main {
 		//READ FROM
 		task.leFicheiroJSON(pathJSONFromTestsRead);
 		System.out.println("-----------READ FROM JSON--------------");
-		System.out.println(task);
+		System.out.println(task.getListaJogadores());
 		
 		//SLEEP
 		try {
@@ -32,9 +32,9 @@ public class Main {
 		
 		//WRITE TO
 		//ADD NEW TASK
-		task.adicionaSubTask(new SubTaskJSON("Ana", new Long(60)));
+		task.adicionaJogador(new SubTaskJSON("Ana", new Long(60)));
 		System.err.println("\n-----------WRITE TO JSON--------------");
-		System.err.println(task);
+		System.err.println(task.getListaJogadores());
 		
 		task.escreveFicheiroJSON(pathJSONFromTestsWrite);
 	}

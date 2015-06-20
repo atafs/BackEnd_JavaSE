@@ -1,5 +1,7 @@
 package io.json.properties;
 
+import io.excel.single_tab.properties.SubTaskJira;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,6 +13,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -20,24 +23,34 @@ import org.json.simple.parser.ParseException;
 
 public class TaskJSON {
 
-	private ArrayList<SubTaskJSON> lista;
+	//ATTRIBUTES
+	private String nomeFicheiro;
+	private ArrayList<SubTaskJira> lista;
+	private ArrayList<SubTaskJSON> listaJogadores;
 
 	public TaskJSON() {
-		lista = new ArrayList<SubTaskJSON>();
+		lista = new ArrayList<SubTaskJira>();
+		listaJogadores = new ArrayList<SubTaskJSON>();
+	}
+	
+	public TaskJSON(String nomeFicheiro) {
+		this.nomeFicheiro = nomeFicheiro;
 	}
 
-	public void adicionaSubTask(SubTaskJSON jogador) {
-		lista.add(jogador);
+	public void adicionaSubTask(SubTaskJira subtask) {
+		lista.add(subtask);
+	}
+	
+	public void adicionaJogador(SubTaskJSON jogador) {
+		listaJogadores.add(jogador);
 	}
 
 	@Override
 	public String toString() {
 		String toReturn = "";
-
-		for (SubTaskJSON jogador : lista) {
-			toReturn += jogador.toString() + "\n";
+		for (SubTaskJira subtask : lista) {
+			toReturn += subtask.toString() + "\n";
 		}
-
 		return toReturn;
 	}
 
@@ -88,7 +101,7 @@ public class TaskJSON {
 				Long pontuacao = (Long)jsonObject.get("pontuacao");
 				
 				SubTaskJSON jogador = new SubTaskJSON(nome, pontuacao);
-				lista.add(jogador);
+				listaJogadores.add(jogador);
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -104,14 +117,15 @@ public class TaskJSON {
 			PrintWriter writer = new PrintWriter(new File(nomeFicheiro));
 			try {
 				String str = "[\n";
-				for (SubTaskJSON jogador : lista) {
+				for (SubTaskJSON jogador : listaJogadores) {
 					str += "\t{\"nome\": ";
 					str += "\"" + jogador.getNome() + "\"";
 					
 					str += ", \"pontuacao\": ";
 					str += jogador.getPontuacao() + "}";
+					
 
-					if(lista.get( lista.size() -1 ) != jogador){
+					if(listaJogadores.get( lista.size()  ) != jogador){
 						str += ",\n";
 					}
 				}
@@ -125,7 +139,49 @@ public class TaskJSON {
 			e.printStackTrace();
 		}
 	}
-	
+		
+	public void escreveFicheiroJSONThreeColumns(String nomeFicheiro) {
+		try {
+			PrintWriter writer = new PrintWriter(new File(nomeFicheiro));
+			try {
+				String str = "[\n";
+				for (SubTaskJira subtask : lista) {
+					str += "\t{\"nome\": ";
+					str += "\"" + subtask.getId() + "\"";
+
+					str += ", \"pontuacao\": ";
+					str += subtask.getTitle() + "}";
+
+					str += ", \"pontuacao\": ";
+					str += subtask.getDescription() + "}";
+
+					if (lista.get(lista.size() - 1) != subtask) {
+						str += ",\n";
+					}
+				}
+				str += "\n]";
+
+				writer.println(str);
+			} finally {
+				writer.close();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	//GETTERS
+	public ArrayList<SubTaskJira> getLista() {
+		return lista;
+	}
+
+	public ArrayList<SubTaskJSON> getListaJogadores() {
+		return listaJogadores;
+	}
+
+	public void setLista(List<SubTaskJira> lista) {
+		this.lista = (ArrayList<SubTaskJira>) lista;
+	}
 	
 	
 	

@@ -30,8 +30,7 @@ import jxl.CellType;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
-
-import io.excel.properties.SubTaskJira;
+import io.excel.single_tab.properties.SubTaskJira;
 import io.scanner.properties.SubTaskJiraWithScanner;
 
 public class NReader {
@@ -104,12 +103,12 @@ public class NReader {
 						System.out.println("I got a number " + cell.getContents());
 					}
 					
-					//PAUSE IN PRINT TO CONSOLE
-					try {
-						Thread.sleep(150);
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
+//					//PAUSE IN PRINT TO CONSOLE
+//					try {
+//						Thread.sleep(150);
+//					} catch (InterruptedException e) {
+//						e.printStackTrace();
+//					}
 				}
 			}
 		} catch (BiffException e) {
@@ -144,6 +143,10 @@ public class NReader {
 
 	public List<SubTaskJira> getSubTaskJiraList() {
 		return subTaskJiraList;
+	}
+
+	public void setSubTaskJiraList(List<SubTaskJira> subTaskJiraList) {
+		this.subTaskJiraList = subTaskJiraList;
 	}
 
 	//PARAGRAPH
