@@ -9,6 +9,6 @@
 	<classpathentry kind="lib" path="/ProjectoJava_Modulos_IO_LIRARIES/jar/io/json/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="/ProjectoJava_Modulos_IO_LIRARIES/jar/logger/jcabi-log-0.7.jar"/>
 	<classpathentry kind="lib" path="/ProjectoJava_Modulos_IO_LIRARIES/jar/io/excel/poi-ooxml-3.5-FINAL.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JDK8_51"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
