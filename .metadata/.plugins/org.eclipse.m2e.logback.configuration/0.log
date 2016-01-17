@@ -287,3 +287,370 @@ Caused by: java.io.IOException: CreateProcess error=2, The system cannot find th
 2016-01-17 21:04:24,589 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
 2016-01-17 21:04:24,590 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-01-17 21:04:24,593 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:09:00,203 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:09:00,206 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:09:00,207 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:09:00,210 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:14:35,815 [Worker-55] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ProjectoJava_Modulos_IO_v2:ProjectoJava_Modulos_IO_v2:0.0.1-SNAPSHOT @ D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\pom.xml.
+2016-01-17 21:14:36,176 [Worker-55] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6.pom
+2016-01-17 21:14:36,288 [Worker-55] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6.pom
+2016-01-17 21:14:36,379 [Worker-55] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6.jar
+2016-01-17 21:14:38,087 [Worker-55] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6.jar
+2016-01-17 21:14:38,095 [Worker-55] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to add com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6.pom
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\.metadata\.plugins\org.eclipse.m2e.core\nexus\bdbc4f1e10991ef7bf7d521866a90e45: files: _0.cfs _1.cfs _3.fdt _3.fdx
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.SegmentInfos.readCurrentVersion(SegmentInfos.java:366) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.isCurrent(DirectoryIndexReader.java:237) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexReader(DefaultIndexingContext.java:456) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getIndexSearcher(DefaultIndexingContext.java:475) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getGroups(IndexUtils.java:251) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.IndexUtils.getRootGroups(IndexUtils.java:220) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.context.DefaultIndexingContext.getRootGroups(DefaultIndexingContext.java:785) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.DefaultIndexerEngine.updateGroups(DefaultIndexerEngine.java:150) ~[org.eclipse.m2e.maven.indexer_1.6.0.20150526-2031/:na]
+	at org.apache.maven.index.DefaultIndexerEngine.update(DefaultIndexerEngine.java:82) ~[org.eclipse.m2e.maven.indexer_1.6.0.20150526-2031/:na]
+	at org.apache.maven.index.DefaultNexusIndexer.addArtifactToIndex(DefaultNexusIndexer.java:338) ~[org.eclipse.m2e.maven.indexer_1.6.0.20150526-2031/:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.addDocument(NexusIndexManager.java:580) ~[org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndex.addArtifact(NexusIndex.java:80) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexingTransferListener.artifactInstalled(IndexingTransferListener.java:32) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener.notifyListeners(EclipseRepositoryListener.java:55) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener.artifactDownloaded(EclipseRepositoryListener.java:41) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositoryEventDispatcher.dispatch(DefaultRepositoryEventDispatcher.java:124) [aether-impl-1.0.2.v20150114.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositoryEventDispatcher.dispatch(DefaultRepositoryEventDispatcher.java:93) [aether-impl-1.0.2.v20150114.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.artifactDownloaded(DefaultArtifactResolver.java:705) [aether-impl-1.0.2.v20150114.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.evaluateDownloads(DefaultArtifactResolver.java:648) [aether-impl-1.0.2.v20150114.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:535) [aether-impl-1.0.2.v20150114.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) [aether-impl-1.0.2.v20150114.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) [aether-impl-1.0.2.v20150114.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:367) [aether-impl-1.0.2.v20150114.jar:na]
+	at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve(DefaultProjectDependenciesResolver.java:205) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.resolveDependencies(DefaultProjectBuilder.java:215) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:188) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) [maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.DefaultMavenDependencyResolver.resolveProjectDependencies(DefaultMavenDependencyResolver.java:63) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:529) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$3.call(ProjectRegistryManager.java:491) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$3.call(ProjectRegistryManager.java:1) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:495) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:350) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:297) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.1.v20141014-1248.jar:na]
+2016-01-17 21:14:38,169 [Worker-55] ERROR o.e.m.jdt.internal.BuildPathManager - Can't save classpath container state for ProjectoJava_Modulos_IO_v2
+java.io.FileNotFoundException: D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\.metadata\.plugins\org.eclipse.m2e.jdt\ProjectoJava_Modulos_IO_v2.container (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[na:1.8.0_66]
+	at java.io.FileOutputStream.open(Unknown Source) ~[na:1.8.0_66]
+	at java.io.FileOutputStream.<init>(Unknown Source) ~[na:1.8.0_66]
+	at java.io.FileOutputStream.<init>(Unknown Source) ~[na:1.8.0_66]
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.saveContainerState(BuildPathManager.java:206) [org.eclipse.m2e.jdt_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.updateClasspath(BuildPathManager.java:195) [org.eclipse.m2e.jdt_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.jdt.internal.BuildPathManager.mavenProjectChanged(BuildPathManager.java:180) [org.eclipse.m2e.jdt_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:919) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:299) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.6.0.20150526-2032.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.1.v20141014-1248.jar:na]
+2016-01-17 21:14:38,300 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:14:38,306 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:14:38,307 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:14:38,313 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:14:39,401 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:14:39,407 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:14:39,408 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:14:39,414 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:14:46,061 [Worker-77] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:14:46,067 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:14:46,068 [Worker-77] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:14:46,073 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:14:48,623 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:14:48,629 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:14:48,630 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:14:48,636 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:15:21,742 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:15:21,749 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:15:21,750 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:15:21,755 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:15:31,350 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:15:31,356 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:15:31,357 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:15:31,364 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:15:49,150 [Worker-80] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:15:49,155 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:15:49,155 [Worker-80] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:15:49,160 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:16:12,666 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:16:12,670 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:16:12,671 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:16:12,675 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:16:16,572 [Worker-77] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:16:16,575 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:16:16,576 [Worker-77] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:16:16,579 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:17:45,208 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:17:45,212 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:17:45,213 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:17:45,216 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:18:24,947 [Worker-75] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:18:24,950 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:18:24,951 [Worker-75] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:18:24,954 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:18:51,147 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:18:51,150 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:18:51,151 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:18:51,154 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:18:54,782 [Worker-75] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:18:54,785 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:18:54,786 [Worker-75] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:18:54,789 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:19:02,384 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:19:02,387 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:19:02,388 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:19:02,390 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:19:05,569 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:19:05,572 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:19:05,573 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:19:05,576 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:19:45,945 [Worker-0] ERROR org.eclipse.jgit.util.FS - Caught exception in FS.readPipe()
+java.io.IOException: Cannot run program "bash" (in directory "C:\Users\Americo"): CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source) ~[na:1.8.0_66]
+	at java.lang.Runtime.exec(Unknown Source) ~[na:1.8.0_66]
+	at org.eclipse.jgit.util.FS.readPipe(FS.java:431) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS_Win32.discoverGitPrefix(FS_Win32.java:113) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS.gitPrefix(FS.java:517) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.SystemReader$Default.openSystemConfig(SystemReader.java:92) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.internal.storage.file.FileRepository.<init>(FileRepository.java:171) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.storage.file.FileRepositoryBuilder.build(FileRepositoryBuilder.java:92) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.storage.file.FileRepositoryBuilder.create(FileRepositoryBuilder.java:110) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.egit.core.RepositoryCache.lookupRepository(RepositoryCache.java:55) [org.eclipse.egit.core_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:503) [org.eclipse.egit.core_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:471) [org.eclipse.egit.core_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:464) [org.eclipse.egit.core_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:204) [org.eclipse.egit.core_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:86) [org.eclipse.egit.core_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.core.GitProvider.getMoveDeleteHook(GitProvider.java:73) [org.eclipse.egit.core_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.team.internal.core.MoveDeleteManager.getHookFor(MoveDeleteManager.java:34) [org.eclipse.team.core_3.7.0.v20130514-1224.jar:na]
+	at org.eclipse.team.internal.core.MoveDeleteManager.deleteFolder(MoveDeleteManager.java:62) [org.eclipse.team.core_3.7.0.v20130514-1224.jar:na]
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1982) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115) [org.eclipse.jdt.core_3.10.2.v20150120-1634.jar:na]
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47) [org.eclipse.jdt.core_3.10.2.v20150120-1634.jar:na]
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256) [org.eclipse.jdt.core_3.10.2.v20150120-1634.jar:na]
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186) [org.eclipse.jdt.core_3.10.2.v20150120-1634.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.1.v20141014-1248.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method) ~[na:1.8.0_66]
+	at java.lang.ProcessImpl.<init>(Unknown Source) ~[na:1.8.0_66]
+	at java.lang.ProcessImpl.start(Unknown Source) ~[na:1.8.0_66]
+	... 36 common frames omitted
+2016-01-17 21:19:47,223 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:19:47,231 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:19:47,234 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:19:47,238 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:20:46,728 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-01-17 21:20:47,237 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ProjectoJava_Modulos_IO_v2:ProjectoJava_Modulos_IO_v2:0.0.1-SNAPSHOT @ D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\pom.xml.
+2016-01-17 21:20:47,461 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectoJava_Modulos_IO_v2/src
+2016-01-17 21:20:47,461 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ProjectoJava_Modulos_IO_v2/src/test/java because it overlaps with /ProjectoJava_Modulos_IO_v2/src
+2016-01-17 21:20:48,421 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2016-01-17 21:20:48,647 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:20:48,652 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:20:48,655 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:20:48,659 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:21:15,462 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:21:15,465 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:21:15,466 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:21:15,469 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:21:24,688 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:21:24,691 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:21:24,692 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:21:24,695 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:21:43,486 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:21:43,489 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:21:43,490 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:21:43,493 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:21:50,201 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:21:50,204 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:21:50,205 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:21:50,208 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:22:01,503 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:22:01,506 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:22:01,508 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:22:01,511 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:22:48,810 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:22:48,813 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:22:48,814 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:22:48,817 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:22:49,875 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:22:49,878 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:22:49,880 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:22:49,885 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:22:57,107 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:22:57,110 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:22:57,111 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:22:57,114 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:23:06,655 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:23:06,658 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:23:06,659 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:23:06,663 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:23:07,667 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:23:07,670 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:23:07,671 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:23:07,674 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:24:07,275 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:24:07,278 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:24:07,279 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:24:07,283 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:24:29,241 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:24:29,245 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:24:29,246 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:24:29,249 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:24:36,085 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:24:36,088 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:24:36,089 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:24:36,092 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:26:07,069 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:26:07,072 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:26:07,073 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:26:07,076 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:26:19,170 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:26:19,173 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:26:19,175 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:26:19,180 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:29:18,904 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:18,908 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:29:18,910 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:18,917 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:29:31,748 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:31,751 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:29:31,751 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:31,754 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:29:42,409 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:42,412 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:29:42,413 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:42,415 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:29:46,125 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:46,128 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:29:46,129 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:46,132 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:29:49,594 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:49,597 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:29:49,598 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:29:49,601 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:30:41,518 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:30:41,521 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:30:41,522 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:30:41,525 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:31:43,810 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:31:43,814 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:31:43,814 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:31:43,817 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:32:11,276 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:32:11,280 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:32:11,280 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:32:11,283 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:32:30,429 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:32:30,432 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:32:30,433 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:32:30,436 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:32:52,801 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:32:52,804 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:32:52,805 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:32:52,808 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:33:09,172 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:33:09,175 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:33:09,176 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:33:09,180 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:33:17,628 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:33:17,632 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:33:17,632 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:33:17,636 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:33:22,358 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:33:22,362 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:33:22,363 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:33:22,366 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:33:39,849 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:33:39,852 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:33:39,853 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:33:39,856 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:34:07,742 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:34:07,746 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:34:07,747 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:34:07,750 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:34:28,043 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:34:28,047 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:34:28,047 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:34:28,051 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:35:06,571 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:06,574 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:35:06,575 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:06,579 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:35:19,172 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:19,175 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:35:19,176 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:19,180 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:35:28,120 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:28,123 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:35:28,124 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:28,126 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:35:39,413 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:39,416 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:35:39,417 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:39,420 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:35:58,507 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:58,511 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:35:58,512 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:35:58,515 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:36:32,757 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:36:32,761 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:36:32,762 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:36:32,765 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources
+2016-01-17 21:37:33,318 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:37:33,321 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\main\resources
+2016-01-17 21:37:33,322 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-01-17 21:37:33,325 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\clouds\Drive Ilimitado\BackEnd_JavaSE_IO\ProjectoJava_Modulos_IO_v2\src\test\resources

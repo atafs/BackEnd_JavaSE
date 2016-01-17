@@ -14,12 +14,12 @@ public class CreatePDF {
 		Document document = new Document();
 		try {
 			//CREATE DOCUMENT
-			PdfWriter.getInstance(document, new FileOutputStream(".\\pdf\\createPDF.pdf"));
+			PdfWriter.getInstance(document, new FileOutputStream(".\\pdf\\_1createPDF.pdf"));
 			
 			//OPEN AND USE DOCUMENT
 			document.open();
 			Paragraph paragraph = new Paragraph();
-			paragraph.add("THIS IS A SUPER PDF!!");
+			paragraph.add("THIS IS A SUPER PDF 1createPDF.pdf!!");
 			document.add(paragraph);
 			
 		} catch (Exception e) {
@@ -27,5 +27,8 @@ public class CreatePDF {
 		} finally {
 			document.close();
 		}
+		
+		//PRINT
+		System.err.println("ENDED WITH SUCCESS!!");
 	}
 }
