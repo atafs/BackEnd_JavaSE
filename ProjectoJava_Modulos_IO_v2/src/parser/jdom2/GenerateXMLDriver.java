@@ -8,14 +8,14 @@ import org.jdom2.output.XMLOutputter;
 public class GenerateXMLDriver {
 	
 	//ATTRIBUTES
-	static String[][] tutorials = {
+	private static String[][] tutorials = {
 		{"Abstract Factory", "Factory Method"},
 		{"Point to Point", "Publish / Subscribe"}
 	};
 	
 	//MAIN
 	public static void main(String[] args) {
-		System.err.println(GenerateXMLDriver.generateChannelXML());
+		System.out.println(GenerateXMLDriver.generateChannelXML());
 	}
 	
 	/** STATIC FUNCTION: */
@@ -28,7 +28,7 @@ public class GenerateXMLDriver {
 		document.setRootElement(channelElement);
 		
 		Element nameElement = new Element("name");
-		nameElement.addContent("Zane Academy");
+		nameElement.addContent("AmericoTomasLIB");
 		channelElement.addContent(nameElement);
 		
 		//GENERATE
