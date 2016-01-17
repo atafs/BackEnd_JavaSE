@@ -1,0 +1,5 @@
+package io.bytes.writer;
+
+public class WriteFile {
+
+}

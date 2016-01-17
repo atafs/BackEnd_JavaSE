@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;io.bytes.read&apos; to &apos;io.bytes.reader&apos;&#x0D;&#x0A;- Original project: &apos;ProjectoJava_Modulos_IO_v2&apos;&#x0D;&#x0A;- Original element: &apos;ProjectoJava_Modulos_IO_v2/src/io.bytes.read&apos;&#x0D;&#x0A;- Renamed element: &apos;ProjectoJava_Modulos_IO_v2/src/io.bytes.reader&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;io.bytes.read&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;io.bytes.read" name="io.bytes.reader" qualified="false" references="true" stamp="1453067988406" textual="false" version="1.0"/>
+</session>
