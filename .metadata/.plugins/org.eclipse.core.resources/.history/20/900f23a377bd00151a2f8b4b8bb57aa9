@@ -1,0 +1,44 @@
+package io.bytes.reader;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+
+public class ReadFileBytes {
+
+	//MAIN
+	public static void main(String[] args) {
+		//CREATE FILE (path of it)
+		File path = new File("txt//writeFileByte.txt");
+		
+		//PRINT INFO OF FILE
+		System.out.println("We got a file: \t\t" + path.getAbsolutePath());
+		System.out.println("Does it exist? \t\t" + path.exists()); 
+		System.out.println("Is it a Directory? \t" + path.isDirectory());
+		
+		//IN: READER
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(path)))
+		
+		//OUT
+		try {
+			OutputStream outputStream = new FileOutputStream(path);
+			outputStream.write(contentToWrite.getBytes());
+			System.err.println("WROTE IN BYTES: \t" + contentToWrite);
+			outputStream.close();
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+		
+		
+		//DATA
+		String contentToWrite = "Hello World of Strings!!";
+	}
+}

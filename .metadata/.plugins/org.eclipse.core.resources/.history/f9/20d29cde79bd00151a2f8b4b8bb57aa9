@@ -1,0 +1,37 @@
+package io.bytes.reader;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+
+public class ReaderURL {
+	
+	// MAIN
+	public static void main(String[] args) {
+
+		URL url = new URL("http://cdn3.crunchify.com/wp-content/uploads/code/json.sample.txt");
+		try {
+			// IN: READER
+			BufferedReader reader = new BufferedReader(new InputStreamReader(
+					new FileInputStream(path)));
+
+			// DATA: FIRST LINE
+			String firstLine = reader.readLine();
+
+			// PRINT
+			System.out.println("READS: \t\t\t" + firstLine);
+
+			// CLOSE
+			reader.close();
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

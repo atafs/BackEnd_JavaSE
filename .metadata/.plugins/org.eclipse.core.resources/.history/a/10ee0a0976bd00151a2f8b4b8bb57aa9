@@ -1,0 +1,19 @@
+package io.bytes.writer;
+
+import java.io.File;
+
+public class WriteFile {
+	
+	//MAIN
+	public static void main(String[] args) {
+		//CREATE FILE (path of it)
+		File path = new File(".//txt//writeFileByte.txt");
+		
+		//PRINT INFO OF FILE
+		System.out.println("We got a file: \t\t" + path.getAbsolutePath());
+		System.out.println("Does it exist? \t\t" + path.exists()); 
+		System.out.println("Is it a Directory? \t" + path.isDirectory());
+
+	}
+
+}
