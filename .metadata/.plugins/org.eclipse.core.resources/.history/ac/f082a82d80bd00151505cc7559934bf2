@@ -19,7 +19,10 @@ public class ReadFileBytes {
 		System.err.println("We got a file: \t\t" + path.getAbsolutePath());
 		System.err.println("Does it exist? \t\t" + path.exists()); 
 		System.err.println("Is it a Directory? \t" + path.isDirectory());
-	
+		
+		//TODO DELETE
+		Thread.sleep(2000);
+		
 		try {
 			//IN: READER
 			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(path)));
